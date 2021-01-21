@@ -31,7 +31,7 @@ router.put("/api/workouts/:id", (req, res) => {
     const id = req.params.id;
     const body = req.body
 
-    Workout.findOneAndUpdate({ _id: id }, {$push:{ exercises: body }})
+    Workout.findOneAndUpdate({ id }, {$push:{ exercises: body }})
     .then(data => {
         console.log(data)
         res.json(data);
@@ -52,21 +52,25 @@ router.get("/api/workouts/range", (req, res) => {
     })
 })
 
-
-
-router.put("/api/workouts/:id", (req, res) => {
+router.put('/api/workouts/:id', (req, res) => {
     const id = req.params.id;
-    const body = req.body
-
-    Workout.findOneAndUpdate({ id }, {$push:{ exercises: body }},
-        {new: true})
-    .then(data => {
-        console.log(data)
+    const body = req.body;
+  
+    db.Workout.findOneAndUpdate(
+      { id },
+      { $push: { exercises: body } },
+      { new: true },
+    )
+      .then((data) => {
+        console.log(data);
         res.json(data);
-    })
-    .catch(err => {
-        res.status(400).json(err)
-    })
-})
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+  });
+
+
+
 
 module.exports = router;
