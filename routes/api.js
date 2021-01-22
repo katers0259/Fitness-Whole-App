@@ -1,4 +1,5 @@
 const router = require("express").Router();
+const { db } = require("../models/Workout.js");
 const Workout = require("../models/Workout.js");
 
 
@@ -69,6 +70,7 @@ router.put('/api/workouts/:id', (req, res) => {
         res.status(400).json(err);
       });
   });
+
 
 
 
