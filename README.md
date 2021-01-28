@@ -34,3 +34,5 @@ This is needed to test the application: open localhost3000 when testing.
 For questions about this app you can contact me at katers0259 or kaitlynbranagan@gmail.com.
 
 ### Images
+![workout](https://user-images.githubusercontent.com/69743567/106076513-ec5c5100-60cc-11eb-90b5-50aa2e95a3f5.PNG)
+![fitness app](https://user-images.githubusercontent.com/69743567/106076515-ed8d7e00-60cc-11eb-851a-5f9af0e5c09b.PNG)
