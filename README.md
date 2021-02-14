@@ -2,6 +2,9 @@
   ### Fitness Whole App
   https://github.com/katers0259/Fitness-Whole-App
   
+  # Deployed App
+  https://warm-fjord-24002.herokuapp.com/
+  
   ### Description
   This is a fitness tracker, that tracks workouts, duration, weight and type.
 
